@@ -24,7 +24,7 @@ public class PrestamosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prestamos);
 
-        recyclerView = findViewById(R.id.recyclerViewPrestamos);
+        recyclerView = findViewById(R.id.listViewDispositivos);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         PrestamoRepository prestamoRepository = new PrestamoRepository();

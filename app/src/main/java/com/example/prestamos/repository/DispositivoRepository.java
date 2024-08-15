@@ -1,6 +1,8 @@
 package com.example.prestamos.repository;
 
 
+
+
 import com.example.prestamos.model.Dispositivo;
 import com.example.prestamos.network.ApiClient;
 import com.example.prestamos.network.ApiService;
@@ -9,6 +11,8 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class DispositivoRepository {
 
@@ -16,6 +20,10 @@ public class DispositivoRepository {
 
     public DispositivoRepository() {
         // Inicializa el ApiService usando el cliente de Retrofit
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://10.0.2.2:8000/api/dispositivos/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
         apiService = ApiClient.getClient().create(ApiService.class);
     }
 

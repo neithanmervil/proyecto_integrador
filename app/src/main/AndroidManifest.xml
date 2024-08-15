@@ -38,6 +38,8 @@
                 android:label="@string/app_name">
                 <!-- Agregar intent-filters si es necesario -->
             </activity>
+        <activity android:name=".user_interfaces.PrestamoFormActivity" />
+
 
 
 

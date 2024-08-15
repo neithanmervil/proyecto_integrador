@@ -16,4 +16,10 @@
         android:layout_height="wrap_content"
         android:text="Teléfono del Estudiante"/>
 
+
+    <TextView
+        android:id="@+id/textViewDispositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono del Estudiante"/>
 </LinearLayout>

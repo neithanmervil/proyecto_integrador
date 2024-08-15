@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.prestamos.R;
 
+// crear un item para tranferir el dispositivo ha actvity prestamos form y hacer el prestamo
+
 public class MainActivity extends AppCompatActivity {
     @SuppressLint("ResourceType")
     @Override
@@ -24,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btnVerDispositivos).setOnClickListener(new View.OnClickListener() {
+
+
+        findViewById(R.id.btnHacerPrestamos).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DispositivosActivity.class));
+                startActivity(new Intent(MainActivity.this, PrestamoFormActivity.class));
             }
         });
     }

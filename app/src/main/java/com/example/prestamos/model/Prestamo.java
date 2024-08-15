@@ -5,12 +5,13 @@ import java.io.Serializable;
 public class Prestamo implements Serializable {
     private String nombre_estudiante;
     private String telefono_estudiante;
-    private int dispositivoId; // Cambia a int o String si el dispositivo es representado como un ID
+    private int dispositivoId;
     private String fecha_prestamo;
     private String fecha_devolucion;
 
     // Constructor vacío para Retrofit
-    public Prestamo() {}
+    public Prestamo() {
+    }
 
     // Constructor que acepta nombre y teléfono
     public Prestamo(String nombre, String telefono, int dispositivoId, String fecha_prestamo, String fecha_devolucion) {

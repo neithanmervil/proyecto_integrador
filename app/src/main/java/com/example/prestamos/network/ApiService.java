@@ -18,6 +18,6 @@ public interface ApiService {
     @GET("api/dispositivos/")
     Call<List<Dispositivo>> getDispositivos();
 
-    @POST("/api/prestamos/")
+    @POST("api/prestamos/")
     Call<Prestamo> hacerPrestamo(@Body Prestamo prestamo);
 }

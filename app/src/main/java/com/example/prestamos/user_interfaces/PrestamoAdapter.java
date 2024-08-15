@@ -31,6 +31,8 @@ public class PrestamoAdapter extends RecyclerView.Adapter<PrestamoAdapter.Presta
         Prestamo prestamo = prestamoList.get(position);
         holder.nombreTextView.setText(prestamo.getNombre_estudiante());
         holder.telefonoTextView.setText(prestamo.getTelefono_estudiante());
+        holder.textViewDispositivo.setText(String.valueOf(prestamo.getDispositivoId()));
+
         // Puedes agregar más campos del modelo Prestamo a mostrar aquí
     }
 
@@ -43,11 +45,13 @@ public class PrestamoAdapter extends RecyclerView.Adapter<PrestamoAdapter.Presta
 
         TextView nombreTextView;
         TextView telefonoTextView;
+        TextView textViewDispositivo;
 
         public PrestamoViewHolder(@NonNull View itemView) {
             super(itemView);
             nombreTextView = itemView.findViewById(R.id.textViewNombre);
             telefonoTextView = itemView.findViewById(R.id.textViewTelefono);
+            textViewDispositivo = itemView.findViewById(R.id.textViewDispositivo);
         }
     }
 }

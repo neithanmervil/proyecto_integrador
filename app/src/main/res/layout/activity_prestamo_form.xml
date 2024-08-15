@@ -5,6 +5,14 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+
+    <Spinner
+        android:id="@+id/spinnerDispositivos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
     <EditText
         android:id="@+id/editTextNombre"
         android:layout_width="match_parent"
@@ -20,10 +28,35 @@
         android:layout_marginTop="16dp"
         android:padding="16dp"/>
 
+    <EditText
+        android:id="@+id/editTextFechaPrestamo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Préstamo"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:focusable="false"/>
+
+
+    <EditText
+        android:id="@+id/editTextFechaDevolucion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Devolución"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:focusable="false"/>
+
     <Button
         android:id="@+id/btnHacerPrestamo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hacer Préstamo"
+        android:layout_marginTop="24dp"/>
+
+    <ListView
+        android:id="@+id/listViewDispositivos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"/>
 </LinearLayout>

@@ -11,10 +11,11 @@
         android:layout_height="wrap_content"
         android:text="Ver Préstamos" />
 
+
     <Button
-        android:id="@+id/btnVerDispositivos"
+        android:id="@+id/btnHacerPrestamos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver Dispositivos"
+        android:text="Hacer Préstamos"
         android:layout_marginTop="16dp"/>
 </LinearLayout>
