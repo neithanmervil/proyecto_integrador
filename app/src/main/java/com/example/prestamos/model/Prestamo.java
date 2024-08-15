@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Prestamo implements Serializable {
     private String nombre_estudiante;
     private String telefono_estudiante;
-    private int dispositivoId;
+    private int dispositivo;
     private String fecha_prestamo;
     private String fecha_devolucion;
 
@@ -14,15 +14,16 @@ public class Prestamo implements Serializable {
     }
 
     // Constructor que acepta nombre y teléfono
-    public Prestamo(String nombre, String telefono, int dispositivoId, String fecha_prestamo, String fecha_devolucion) {
-        this.nombre_estudiante = nombre;
-        this.telefono_estudiante = telefono;
-        this.dispositivoId = dispositivoId;
+    public Prestamo(String nombre_estudiante, String telefono_estudiante, int dispositivo, String fecha_prestamo, String fecha_devolucion) {
+        this.nombre_estudiante = nombre_estudiante;
+        this.telefono_estudiante = telefono_estudiante;
+        this.dispositivo = dispositivo;
         this.fecha_prestamo = fecha_prestamo;
         this.fecha_devolucion = fecha_devolucion;
     }
 
     // Getters y Setters
+
 
     public String getNombre_estudiante() {
         return nombre_estudiante;
@@ -40,12 +41,12 @@ public class Prestamo implements Serializable {
         this.telefono_estudiante = telefono_estudiante;
     }
 
-    public int getDispositivoId() {
-        return dispositivoId;
+    public int getDispositivo() {
+        return dispositivo;
     }
 
-    public void setDispositivoId(int dispositivoId) {
-        this.dispositivoId = dispositivoId;
+    public void setDispositivo(int dispositivo) {
+        this.dispositivo = dispositivo;
     }
 
     public String getFecha_prestamo() {
@@ -69,7 +70,7 @@ public class Prestamo implements Serializable {
         return "Prestamo{" +
                 ", nombre_estudiante='" + nombre_estudiante + '\'' +
                 ", telefono_estudiante='" + telefono_estudiante + '\'' +
-                ", dispositivoId=" + dispositivoId +
+                ", dispositivo=" + dispositivo +
                 ", fecha_prestamo='" + fecha_prestamo + '\'' +
                 ", fecha_devolucion='" + fecha_devolucion + '\'' +
                 '}';

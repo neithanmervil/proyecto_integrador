@@ -19,9 +19,8 @@ public class PrestamoAdapter extends RecyclerView.Adapter<PrestamoAdapter.Presta
         this.prestamoList = prestamoList;
     }
 
-    @NonNull
     @Override
-    public PrestamoViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public PrestamoViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_prestamo, parent, false);
         return new PrestamoViewHolder(view);
     }
@@ -31,8 +30,9 @@ public class PrestamoAdapter extends RecyclerView.Adapter<PrestamoAdapter.Presta
         Prestamo prestamo = prestamoList.get(position);
         holder.nombreTextView.setText(prestamo.getNombre_estudiante());
         holder.telefonoTextView.setText(prestamo.getTelefono_estudiante());
-        holder.textViewDispositivo.setText(String.valueOf(prestamo.getDispositivoId()));
-
+        holder.textViewDispositivo.setText(String.valueOf(prestamo.getDispositivo()));
+        holder.fechaPrestamoTextView.setText(prestamo.getFecha_prestamo());
+        holder.fechaDevolucionTextView.setText(prestamo.getFecha_devolucion());
         // Puedes agregar más campos del modelo Prestamo a mostrar aquí
     }
 
@@ -46,12 +46,16 @@ public class PrestamoAdapter extends RecyclerView.Adapter<PrestamoAdapter.Presta
         TextView nombreTextView;
         TextView telefonoTextView;
         TextView textViewDispositivo;
-
+        TextView fechaPrestamoTextView;
+        TextView fechaDevolucionTextView;
         public PrestamoViewHolder(@NonNull View itemView) {
             super(itemView);
             nombreTextView = itemView.findViewById(R.id.textViewNombre);
             telefonoTextView = itemView.findViewById(R.id.textViewTelefono);
             textViewDispositivo = itemView.findViewById(R.id.textViewDispositivo);
+            fechaPrestamoTextView = itemView.findViewById(R.id.fechaPrestamoTextView);
+            fechaDevolucionTextView = itemView.findViewById(R.id.fechaDevolucionTextView);
+        }
         }
     }
-}
+

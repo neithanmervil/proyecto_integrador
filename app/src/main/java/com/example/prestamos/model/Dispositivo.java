@@ -4,14 +4,15 @@ import java.io.Serializable;
 
 public class Dispositivo implements Serializable {
     private int id;
-    private String nombre;
+    private String nombre_dispositivo;
     private String descripcion;
-    private boolean disponible;
+    private boolean esta_disponible;
 
     // Constructor vacío para Retrofit
     public Dispositivo() {}
 
     // Getters y setters
+
     public int getId() {
         return id;
     }
@@ -20,12 +21,12 @@ public class Dispositivo implements Serializable {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre_dispositivo() {
+        return nombre_dispositivo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre_dispositivo(String nombre_dispositivo) {
+        this.nombre_dispositivo = nombre_dispositivo;
     }
 
     public String getDescripcion() {
@@ -36,16 +37,16 @@ public class Dispositivo implements Serializable {
         this.descripcion = descripcion;
     }
 
-    public boolean isDisponible() {
-        return disponible;
+    public boolean isEsta_disponible() {
+        return esta_disponible;
     }
 
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
+    public void setEsta_disponible(boolean esta_disponible) {
+        this.esta_disponible = esta_disponible;
     }
 
     @Override
     public String toString() {
-        return nombre + " - " + descripcion + " - " + (disponible ? "Disponible" : "No Disponible");
+        return id + " - " + nombre_dispositivo + " - " + descripcion + " - " + esta_disponible;
     }
 }
