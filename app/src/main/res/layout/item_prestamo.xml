@@ -2,36 +2,97 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Label and TextView for Nombre del Estudiante -->
+    <TextView
+        android:id="@+id/labelNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Estudiante:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_bright"/>
 
     <TextView
         android:id="@+id/textViewNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre del Estudiante"/>
+        android:text="John Doe"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Label and TextView for Teléfono del Estudiante -->
+    <TextView
+        android:id="@+id/labelTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teléfono del Estudiante:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_bright"/>
 
     <TextView
         android:id="@+id/textViewTelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teléfono del Estudiante"/>
+        android:text="+1 123 456 7890"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Label and TextView for Dispositivo -->
+    <TextView
+        android:id="@+id/labelDispositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dispositivo:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_bright"/>
 
     <TextView
         android:id="@+id/textViewDispositivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teléfono del Estudiante"/>
+        android:text="Laptop Dell XPS"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Label and TextView for Fecha de Préstamo -->
+    <TextView
+        android:id="@+id/labelFechaPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Préstamo:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_bright"/>
 
     <TextView
         android:id="@+id/fechaPrestamoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teléfono del Estudiante"/>
+        android:text="01/08/2024"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- Label and TextView for Fecha de Devolución -->
+    <TextView
+        android:id="@+id/labelFechaDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Devolución:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_blue_bright"/>
+
     <TextView
         android:id="@+id/fechaDevolucionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Teléfono del Estudiante"/>
+        android:text="15/08/2024"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>
-
